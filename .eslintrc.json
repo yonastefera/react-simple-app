@@ -1,0 +1,94 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "rules": {
+    "camelcase": "off",
+    "react/default-props-match-prop-types": "off",
+    "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": "off",
+    "react/sort-comp": [1, {
+      "order": [
+        "static-methods",
+        "type-annotations",
+        "lifecycle",
+        "everything-else",
+        "rendering"
+      ],
+      "groups": {
+        "rendering": [
+          "/^render.+$/",
+          "render"
+        ]
+      }
+    }],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "class-methods-use-this": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "generator-star-spacing": "off",
+    "prefer-template": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "import/no-named-as-default": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "global-require": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "no-mixed-operators": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.2.0"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "./"
+        ]
+      }
+    }
+  }
+}

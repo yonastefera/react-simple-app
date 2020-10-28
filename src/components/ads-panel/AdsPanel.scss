@@ -1,0 +1,27 @@
+.ads-panel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 20rem;
+  width: 20rem;
+  margin-right: .5rem;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  .btn {
+    margin-top: .4rem;
+  }
+
+  &__img {
+    overflow: hidden;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      background: gray;
+    }
+  }
+}

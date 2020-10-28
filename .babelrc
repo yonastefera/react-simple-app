@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "loose": true,
+        "modules": false,
+        "useBuiltIns": "entry"
+      }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/syntax-dynamic-import",
+    "universal-import",
+    [
+      "@babel/proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ]
+      }
+    ]
+  ]
+}
